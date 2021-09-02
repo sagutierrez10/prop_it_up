@@ -5,10 +5,13 @@ import PersonCard from './components/PersonCard';
 function App() {
   return (
     <div className="App">
-      <PersonCard firstName="Jane" lastName="Doe" age="45" hairColor="Black"></PersonCard>
-      <PersonCard firstName="John" lastName="Smith" age="88" hairColor="Brown"></PersonCard>
-      <PersonCard firstName="Millard" lastName="Fillmore" age="50" color="Brown"></PersonCard>
-      <PersonCard firstName="Maria" lastName="Smith" age="62" color="Brown"></PersonCard>
+      <PersonCard firstName="Jane" lastName="Doe" hairColor="Black" currentAge={45}/>
+
+      <PersonCard firstName="John" lastName="Smith" hairColor="Brown" currentAge={88}/>
+      
+      <PersonCard firstName="Millard" lastName="Fillmore" color="Brown"  currentAge={50}/>
+
+      <PersonCard firstName="Maria" lastName="Smith" color="Brown"  currentAge={62}/>
     </div>
   );
 }
